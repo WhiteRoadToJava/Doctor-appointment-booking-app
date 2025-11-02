@@ -9,15 +9,19 @@ const Header = () => {
                 <p className='text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white'>
                         Book Appointment <br/> WHITH Trusted Doctors 
                 </p>
-                <img src={assets.group_profiles} alt="Group Profiles"/>
-                <p>
-                        Simplu browse through our extensive list of trusted doctors, <br/> WHITH Trusted Doctors and book your appointment <br/> at your convenience.
-                        <a href="">Book Appointment <img src={assets.arrow_icon} /> </a>
+                <div className='flex flex-col md:flex-row items-center gap.3 text-white text-sm font-light'>
+                        <img className='w-28 mr-4' src={assets.group_profiles} alt="Group Profiles"/>
+                <p className='text-white text-sm md:text-base lg:text-lg font-light leading-relaxed'>
+                        Simply browse through our extensive list of trusted doctors, <br/> WHITH Trusted Doctors and book your appointment <br/> at your convenience.<br/>
+                        <a className='flex items-center bg-white gap-2 py-3 rounded-full text-gray-600 text:sm m-auto md:m-0 hover:scale-105 transition-all duration-300' href="#speciality">Book Appointment 
+                                <img className='w-3' src={assets.arrow_icon} /> 
+                                </a>
                 </p>
+                </div>
         </div>
         {/* ------------ Right Side ------------ */}
-        <div>
-            <img src={assets.header_img} alt="" />
+        <div className='md:w-1/2 relative'>
+            <img className='w-full md:absolute buttom-0 h-auto reounded-lg' src={assets.header_img} alt="" />
         </div>
         
     </div>
