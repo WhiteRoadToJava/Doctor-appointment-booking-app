@@ -4,7 +4,6 @@
 @tailwind utilities;
 
 
-
-.active-ht{
-        @apply block
+.active-hr {
+    @apply border-b-2 border-blue-600 pb-1;
 }
