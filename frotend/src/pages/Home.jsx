@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import SpecialityMeny from '../components/SpecailityMenu'
 import TopDoctors from '../components/TopDoctors'
+import Ranner from '../components/Ranner'
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
           <Header />
           <SpecialityMeny />
           <TopDoctors />
+          <Ranner />
     </div>
   )
 }
