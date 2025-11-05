@@ -33,7 +33,7 @@ const Footer = () => {
       {/* -------- Copyright Text -------- */}
       <div className='text-center text-gray-500'>
         <hr />
-        <p>© 2024 Appointment Booking. All rights reserved.</p>
+        <p className='py-4'>© 2024 Appointment Booking. All rights reserved.</p>
       </div>
     </div>
   )
