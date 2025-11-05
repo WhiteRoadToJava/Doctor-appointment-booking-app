@@ -44,7 +44,7 @@ const Doctors = () => {
           {filter.map((doctor, index) => (
             <div onClick={() => navigate(`/appointment/${doctor._id}`)}
               key={index} className="flex flex-col items-center bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer" >
-              <img className="w-full h-48 object-cover bg-blue-50 rounded-t-lg" src={doctor.image} alt={doctor.name} />
+              <img className="w-full h-full object-cover bg-blue-50 rounded-t-lg" src={doctor.image} alt={doctor.name} />
               <div className="p-4 text-center w-full">
                 <div className="flex items-center justify-center gap-2 mb-2 text-sm text-green-500">
                   <div className="w-2 h-2 bg-green-500 rounded-full"></div>

@@ -136,10 +136,13 @@ const Appointment = () => {
                         <p onClick={() => setSlotTime(item.time)} key={index} className={`text-gray-700  flex-shrink-0 px-5 py-2 rounded-full cursor-pointer ${item.time === slotTime ? 'bg-green-500 text-white' : 'text-[#949494] border border-[#B4B4B4]'}`}>{item.time.toLowerCase()}</p>
                     ))}
                 </div>
+                <button className='bg-blue-600 text-white w-80  text-sm font-light px-14 py-3 rounded-full my-6'>Book a appointment</button>
             </div>
             {/* Listing Releated Doctors */}
-
-        </div>
+                <div className='text-gray-700 font-medium text-lg mb-4 mt-8 ml-2'>Related Doctors
+                    <RelatedDoctors docId={docId} speciality={docInfo.speciality} />
+                </div>
+            </div>
     ) : null
 }
 
